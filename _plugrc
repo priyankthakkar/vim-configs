@@ -1,0 +1,36 @@
+call plug#begin('~/.vim/plugged')
+
+"ALE - Asynchronous Lint Engine
+Plug 'w0rp/ale'
+
+"Prettier
+Plug 'prettier/vim-prettier', {
+	\ 'do': 'yarn install',
+	\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html	\ ']}
+
+"COC - Code Completion
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+
+"NERDTree
+Plug 'preservim/nerdtree'
+
+"Vim Polyglot - Multi Language Support
+Plug 'sheerun/vim-polyglot'
+
+"Lightline
+Plug 'itchyny/lightline.vim'
+
+" FZF
+Plug 'junegunn/fzf', {'do': './install --bin'}
+Plug 'junegunn/fzf.vim'
+
+" ack - file search
+Plug 'mileszs/ack.vim'
+
+" vim multi-line cursors
+Plug 'terryma/vim-multiple-cursors'
+
+" oceanic next them
+Plug 'mhartington/oceanic-next'
+
+call plug#end()
