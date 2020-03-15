@@ -1,6 +1,6 @@
 set number
 
-set guifont=Hack:h14
+set guifont=Hack\ Nerd\ Font:h14
 
 syntax on
 
@@ -11,4 +11,6 @@ source /home/priyankt/_plugrc
 
 " Theme
 set background=dark
-colorscheme OceanicNext 
+colorscheme OceanicNext
+
+set encoding=UTF-8

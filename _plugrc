@@ -11,6 +11,8 @@ Plug 'prettier/vim-prettier', {
 "COC - Code Completion
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
+source ~/coc-settings.vim
+
 "NERDTree
 Plug 'preservim/nerdtree'
 
@@ -32,5 +34,8 @@ Plug 'terryma/vim-multiple-cursors'
 
 " oceanic next them
 Plug 'mhartington/oceanic-next'
+
+" vim devicons
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
