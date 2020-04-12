@@ -1,16 +1,13 @@
 set number
-
-set guifont=Hack\ Nerd\ Font:h14
-
 syntax on
 
 set tabstop=2 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 "Vim Plug
-source /home/priyankt/_plugrc
+source /Users/priyankthakkar/_plugrc
 
 " Vim CtrlP
-source /home/priyankt/ctrlp-settings.vim
+source /Users/priyankthakkar/ctrlp-settings.vim
 
 " Vim JsDoc
 let g:jsdoc_allow_input_prompt = 1
@@ -23,3 +20,21 @@ set background=dark
 colorscheme OceanicNext
 
 set encoding=UTF-8
+
+set guifont=DejavuSansMono\ Nerd\ Font:h16
+let g:netrw_browse_split = 3
+
+" NERDTree folder icons
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+" Prettier auto-format async before save
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
+" ale config
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+let b:ale_fixers = ['prettier', 'eslint']
