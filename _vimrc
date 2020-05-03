@@ -1,14 +1,13 @@
 set number
-
 syntax on
 
 set tabstop=2 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 "Vim Plug
-source /home/priyankt/_plugrc
+source /Users/priyankthakkar/_plugrc
 
 " Vim CtrlP
-source /home/priyankt/ctrlp-settings.vim
+source /Users/priyankthakkar/ctrlp-settings.vim
 
 " COC settings
 source /home/priyankt/coc-settings.vim
@@ -35,11 +34,17 @@ colorscheme OceanicNext
 
 set encoding=UTF-8
 
-" Clipboard
-set clipboard+=unnamedplus
-map /y "*y
-map /p "*p
-
 " NERDTree folder icons
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+
+" Prettier auto-format async before save
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
+" ale config
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+let b:ale_fixers = ['prettier', 'eslint']
