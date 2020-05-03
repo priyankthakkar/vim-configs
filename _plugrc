@@ -11,8 +11,6 @@ Plug 'prettier/vim-prettier', {
 "COC - Code Completion
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
-source ~/coc-settings.vim
-
 "NERDTree
 Plug 'preservim/nerdtree'
 
