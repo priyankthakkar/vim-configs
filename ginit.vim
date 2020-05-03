@@ -4,5 +4,5 @@
 " _vimrc is loaded. So moved it to ginit.vim which is loaded once _vimrc
 " is parsed
 " do this only if you guifont is not an editor command error
-
+" thread that resolved my issue https://bit.ly/3dhh5zH
 set guifont=Hack\ Nerd\ Font:h14
